@@ -1,0 +1,42 @@
+.support--section {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  div {
+    padding: 0.9375rem;
+    &:hover {
+      svg {
+        opacity: 1;
+        transition: opacity .3s ease-in-out;
+      }
+    }
+  }
+  svg {
+    width: 100%;
+    opacity: .3;
+  }
+}
+
+.pugjs {
+  height: 6.25rem;
+  max-width: 6.25rem;
+
+}
+.nodejs {
+  height: 3.125rem;
+  max-width: 6.25rem;
+}
+
+.gulp {
+  height: 6.25rem;
+  max-width: 3.125rem;
+}
+
+.bootstrap {
+  height: 6.25rem;
+  max-width: 6.25rem;
+}
+
+.sass {
+  height: 6.25rem;
+  max-width: 6.25rem;
+}

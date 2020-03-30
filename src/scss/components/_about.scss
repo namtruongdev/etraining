@@ -1,0 +1,28 @@
+.about--section {
+  padding: 1.875rem 0;
+}
+.about--section__title {
+  padding: 0 15px 0 15px;
+  h2 {
+    line-height: 1.5;
+  }
+}
+.about--section__p {
+  font-size: 1.3125rem;
+}
+[class*="about--section__description__col-"] {
+  padding: 15px;
+  svg {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  div:first-child {
+    margin-bottom: 1.875rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}

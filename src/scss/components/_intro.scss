@@ -1,0 +1,27 @@
+.intro--section__title {
+  padding: 0 15px;
+  h2 {
+    line-height: 1.5;
+  }
+  p {
+    font-size: 1.3125rem;
+  }
+}
+.intro--section__col--1 {
+  padding: 15px;
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  p {
+    font-size: 1.3125rem;
+  }
+}
+.intro--section__col--2 {
+  padding: 15px;
+  width: 100%;
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,18 @@
+.review--section__title {
+  padding: 3.75rem 15px 1.875rem 15px;
+  h2 {
+    line-height: 1.5;
+  }
+}
+.review--section__info {
+  padding: 0.9375rem 15px;
+  min-width: 11.5625rem;
+  img {
+    width: 100%;
+    max-width: 9.6875rem;
+    border: 5px solid #f3ffbd;
+  }
+}
+.review--section__comment {
+  padding: 15px;
+}

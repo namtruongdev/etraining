@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "./",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "includes/components/**",
+      "includes/sprite.pug",
+      "includes/loadCSS.js",
+      "src/**",
+      "tasks/**",
+      "views/**",
+      "critical.js",
+      "gulpfile.js",
+      "package-lock.json",
+      "package.json"
+    ]
+  }
+}

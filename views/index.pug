@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+html(lang="vi-VN")
+  head
+    style
+      include ../includes/critical.css
+    link(rel="preload" href="./assets/scss/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
+    noscript
+      link(rel="stylesheet" href="./assets/scss/main.css")
+    script
+      include ../includes/loadCSS.js
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title ETraining - Học tiếng Anh theo cách của bạn
+  body
+    //---------- Sprity svg-------------
+    include ../includes/sprite.pug
+
+    //- ----------- Header section------------------
+    include ../includes/components/header.pug
+
+    //- -------------Main section -------------
+    main
+
+      //------------------Carousel section---------
+      include ../includes/components/hero.pug
+
+      //------------------------ Title section -------------------
+      include ../includes/components/title.pug
+
+      //--------------------- About section ----------------------
+      include ../includes/components/about.pug
+
+      //- --------- Introduction section -------------
+      include ../includes/components/intro.pug
+
+      //- -- Review section -------------
+      include ../includes/components/review.pug
+
+      //- --- Team section -------------
+      include ../includes/components/team.pug
+
+      //- ---- Support section ---------
+      include ../includes/components/support.pug
+
+      //- --- footer section ------------
+      include ../includes/components/footer.pug
+  
+    script(src="assets/js/main.js" async)
