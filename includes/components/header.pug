@@ -10,16 +10,41 @@ header(class="shadow-sm bg-white fixed-top")
         div(class="collapse navbar-collapse order-3 order-md-0" id="navbar")
           ul(class="navbar-nav")
             li(class="nav-item")
-              a(href="#" class="nav-link") Trang chủ
+              a(href="index.html" class="nav-link") Trang chủ
             li(class="nav-item")
-              a(href="#" class="nav-link") Kỹ năng
+              a(href="javascript:void(0)" class="nav-link") Kỹ năng
+                svg
+                  use(xlink:href="#angle-down-solid")
+              ul(class="nav nav-drop bg-white rounded d-none flex-column pr-4")
+                li(class="nav-item")
+                  a(href="javascript:void(0)" class="nav-link") Nghe
+                li(class="nav-item")
+                  a(href="javascript:void(0)" class="nav-link") Nói
+                li(class="nav-item")
+                  a(href="javascript:void(0)" class="nav-link") Đọc
+                li(class="nav-item")
+                  a(href="javascript:void(0)" class="nav-link") Viết
             li(class="nav-item")
-              a(href="#" class="nav-link") Ngữ pháp
+              a(href="javascript:void(0)" class="nav-link") Ngữ pháp
+                svg
+                  use(xlink:href="#angle-down-solid")
+              ul(class="nav nav-drop bg-white rounded d-none flex-column pr-4")
+                li(class="nav-item")
+                  a(href="./grammar.html" class="nav-link") Dễ
+                li(class="nav-item")
+                  a(href="javascript:void(0)" class="nav-link") Trung bình
             li(class="nav-item")
-              a(href="#" class="nav-link") Từ vựng
+              a(href="javascript:void(0)" class="nav-link") Từ vựng
+                svg
+                  use(xlink:href="#angle-down-solid")
+              ul(class="nav nav-drop bg-white rounded d-none flex-column pr-4")
+                li(class="nav-item")
+                  a(href="./grammar.html" class="nav-link") Dễ
+                li(class="nav-item")
+                  a(href="javascript:void(0)" class="nav-link") Trung bình
             li(class="nav-item px-md-2 py-2 py-md-1")
               button(class="btn text-nowrap btn-sm px-4 primary-gradient rounded-pill" type="button")
-                a(href="#" class="text-white no-hover-underline") Học ngay
+                a(href="./flashcard.html" class="text-white no-hover-underline") Học ngay
         div
           a(class="mr-2 px-1 py-2" href="#" role="button" aria-label="notification")
             svg(class="icon__notify")

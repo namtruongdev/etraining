@@ -1,0 +1,17 @@
+.flashcard__content {
+  height: 90vh;
+
+  div {
+    svg {
+      fill: #666;
+      width: 5rem;
+      height: 5rem;
+      margin: 0 auto;
+      display: block;
+    }
+    p {
+      font-size: 1.3125rem;
+      margin: 1rem 0;
+    }
+  }
+}

@@ -5,6 +5,24 @@
 nav {
   max-width: 1140px;
 }
+.nav-item {
+  &:hover {
+    svg {
+      fill: #333;
+    }
+    .nav-drop {
+      display: -webkit-box;
+      display: flex !important;
+    }
+  }
+  svg {
+    width: 0.7rem;
+    height: 0.7rem;
+    vertical-align: baseline;
+    fill: #666;
+    margin-left: 0.1875rem;
+  }
+}
 
 .logo {
   max-height: 30px;
@@ -30,5 +48,28 @@ nav {
     border-radius: 50rem;
     -webkit-transition: border 0.3s, color 0.3s;
     transition: border 0.3s, color 0.3s;
+  }
+}
+
+.nav-drop {
+  width: 100%;
+  .nav-item {
+    border-top-right-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+    padding-left: 0.4375rem;
+    &:hover {
+      border-left: 5px solid rgba(255, 22, 84, 0.5);
+      background: #ffe6ec;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-drop {
+    position: absolute;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    max-width: 15.625rem;
   }
 }

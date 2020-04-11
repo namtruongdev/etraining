@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html(lang="vi-VN")
+  head
+    style
+      include ../includes/critical.css
+    link(rel="preload" href="./assets/scss/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
+    noscript
+      link(rel="stylesheet" href="./assets/scss/main.css")
+    script
+      include ../includes/loadCSS.js
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title ETraining - Học tiếng Anh theo cách của bạn
+  body
+    //---------- Sprity svg-------------
+    include ../includes/sprite.pug
+
+    //- ----------- Header section------------------
+    include ../includes/components/header.pug
+
+    //- -------------Main section -------------
+    main(class="flashcard__main")
+      //- --- aside section -----------
+      include ../includes/components/flashcard/aside.pug
+
+      //- --- content section ----------------------
+      include ../includes/components/flashcard/content.pug
+
+      //- --- footer section ------------
+      include ../includes/components/footer.pug
+    
+    script(src="assets/js/main.js" async)

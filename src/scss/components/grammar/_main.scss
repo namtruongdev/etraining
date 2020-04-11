@@ -1,0 +1,30 @@
+.grammar__article {
+  width: 100%;
+  margin: 0.9375rem 0;
+  .article__image {
+    max-height: 210px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+  .article__description {
+    padding: 0.9375rem;
+    p {
+      font-size: 1.3125rem;
+    }
+  }
+  .article__container {
+    overflow: hidden;
+  }
+}
+
+.load-more {
+  margin-bottom: 30px;
+  button {
+    margin: 0 auto;
+    display: block;
+  }
+}

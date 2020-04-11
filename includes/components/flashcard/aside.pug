@@ -1,0 +1,23 @@
+div(class='overlay position-fixed vw-100 vh-100')
+aside(class="flashcard__aside position-fixed min-vh-100 bg-white")
+  button(type="button" class="flashcard__aside__open" aria-label="Open")
+    svg
+      use(xlink:href="#bars-solid")
+  div(class='flashcard__aside__close')
+    button(type="button" class="close position-absolute" aria-label="Close" id="close")
+      span(aria-hidden="true") &times;
+  div(class="flashcard__aside__logo py-4")
+    picture
+      source(type="image/webp" srcset="assets/img/logo-rounded.webp")
+      source(type="image/png" srcset="assets/img/logo-rounded.png")
+      img(class='w-100' src="assets/img/logo-rounded.png" alt="ETraining.com")
+  div(class="flashcard__aside__nav")
+    ul(class="nav flex-column")
+      li(class="nav-item")
+        a(class="nav-link" href="javascript:void(0)") Hướng dẫn
+      li(class="nav-item")
+        a(class="nav-link" href="javascript:void(0)") Quản lý từ vựng
+      li(class="nav-item")
+        a(class="nav-link" href="javascript:void(0)") Bảng xếp hạng
+script
+  include ../../../includes/aside.js
