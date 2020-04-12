@@ -26,7 +26,10 @@ section(class="team--section")
             use(xlink:href="#instagram")
     div(class="team--section__person__col-2 flex-grow-1" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-delay="100")
       div(class="team--section__person__info")
-        img(src="src/img/van-duong.jpg" alt="Nguyễn Văn Dương")
+        picture
+          source(type="image/webp" data-srcset="assets/img/van-duong.webp")
+          source(type="image/jpeg" data-srcset="assets/img/van-duong.jpg")
+          img(class="lazyload" src="assets/img/van-duong.jpg" alt="Nguyễn Văn Dương")
         span(class="d-block text-center dev-name") Nguyễn Văn Dương
         span(class="d-block text-center text-muted dev-title") Frontend Developer
       div(class="team--section__person__social d-flex")
