@@ -1,54 +1,65 @@
 header(class="shadow-sm bg-white fixed-top")
-      nav(class="navbar navbar-expand-md navbar-light bg-white mx-auto")
-        button(class="navbar-toggler px-1" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation")
-          span(class="navbar-toggler-icon")
-        a(class="navbar-brand mr-0 mr-sm-2" href="index.html")
-          picture
-            source(type="image/webp" srcset="assets/img/etraining.webp")
-            source(type="image/png" srcset="assets/img/etraining.png")
-            img(class='logo' src="assets/img/etraining.png" alt="ETraining.com")
-        div(class="collapse navbar-collapse order-3 order-md-0" id="navbar")
-          ul(class="navbar-nav")
+  //- -------- Navigation -------
+  nav(class="navbar navbar-expand-md navbar-light bg-white mx-auto")
+    //- Hamberger button------------------
+    button(class="navbar-toggler px-1" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation")
+      span(class="navbar-toggler-icon")
+    //- ------------ Logo image -----------------
+    a(class="navbar-brand mr-0 mr-sm-2" href="index.html")
+      picture
+        source(type="image/webp" srcset="assets/img/etraining.webp")
+        source(type="image/png" srcset="assets/img/etraining.png")
+        img(class='logo' src="assets/img/etraining.png" alt="ETraining.com")
+    //- ------- Navigation link ----------------------
+    div(class="collapse navbar-collapse order-3 order-md-0" id="navbar")
+      ul(class="navbar-nav")
+        //----------- Link item 1----------------
+        li(class="nav-item")
+          a(href="index.html" class="nav-link") Trang chủ
+        //------------ Link item 2 ------------------
+        li(class="nav-item")
+          a(href="javascript:void(0)" class="nav-link") Kỹ năng
+            svg
+              use(xlink:href="#angle-down-solid")
+          //-----------Navigation link secondary -------------
+          ul(class="nav nav-drop bg-white rounded d-none flex-column pr-4")
             li(class="nav-item")
-              a(href="index.html" class="nav-link") Trang chủ
+              a(href="javascript:void(0)" class="nav-link") Nghe
             li(class="nav-item")
-              a(href="javascript:void(0)" class="nav-link") Kỹ năng
-                svg
-                  use(xlink:href="#angle-down-solid")
-              ul(class="nav nav-drop bg-white rounded d-none flex-column pr-4")
-                li(class="nav-item")
-                  a(href="javascript:void(0)" class="nav-link") Nghe
-                li(class="nav-item")
-                  a(href="javascript:void(0)" class="nav-link") Nói
-                li(class="nav-item")
-                  a(href="javascript:void(0)" class="nav-link") Đọc
-                li(class="nav-item")
-                  a(href="javascript:void(0)" class="nav-link") Viết
+              a(href="javascript:void(0)" class="nav-link") Nói
             li(class="nav-item")
-              a(href="javascript:void(0)" class="nav-link") Ngữ pháp
-                svg
-                  use(xlink:href="#angle-down-solid")
-              ul(class="nav nav-drop bg-white rounded d-none flex-column pr-4")
-                li(class="nav-item")
-                  a(href="./grammar.html" class="nav-link") Dễ
-                li(class="nav-item")
-                  a(href="javascript:void(0)" class="nav-link") Trung bình
+              a(href="javascript:void(0)" class="nav-link") Đọc
             li(class="nav-item")
-              a(href="javascript:void(0)" class="nav-link") Từ vựng
-                svg
-                  use(xlink:href="#angle-down-solid")
-              ul(class="nav nav-drop bg-white rounded d-none flex-column pr-4")
-                li(class="nav-item")
-                  a(href="./grammar.html" class="nav-link") Dễ
-                li(class="nav-item")
-                  a(href="javascript:void(0)" class="nav-link") Trung bình
-            li(class="nav-item px-md-2 py-2 py-md-1")
-              button(class="btn text-nowrap btn-sm px-4 primary-gradient rounded-pill" type="button")
-                a(href="./flashcard.html" class="text-white no-hover-underline") Học ngay
-        div
-          a(class="mr-2 px-1 py-2" href="#" role="button" aria-label="notification")
-            svg(class="icon__notify")
-              use(xlink:href="#bell")
-          a(href="#" role="button" aria-label="profile")
-            svg(class='icon__profile')
-              use(xlink:href="#profile")
+              a(href="javascript:void(0)" class="nav-link") Viết
+        //- ----------------Link item 3 -------------------
+        li(class="nav-item")
+          a(href="javascript:void(0)" class="nav-link") Ngữ pháp
+            svg
+              use(xlink:href="#angle-down-solid")
+          ul(class="nav nav-drop bg-white rounded d-none flex-column pr-4")
+            li(class="nav-item")
+              a(href="./grammar.html" class="nav-link") Dễ
+            li(class="nav-item")
+              a(href="javascript:void(0)" class="nav-link") Trung bình
+        //- ------------- Link item 4 -----------------
+        li(class="nav-item")
+          a(href="javascript:void(0)" class="nav-link") Từ vựng
+            svg
+              use(xlink:href="#angle-down-solid")
+          ul(class="nav nav-drop bg-white rounded d-none flex-column pr-4")
+            li(class="nav-item")
+              a(href="./grammar.html" class="nav-link") Dễ
+            li(class="nav-item")
+              a(href="javascript:void(0)" class="nav-link") Trung bình
+        //- ------------- Link item 5 ---------------
+        li(class="nav-item px-md-2 py-2 py-md-1")
+          button(class="btn text-nowrap btn-sm px-4 primary-gradient rounded-pill" type="button")
+            a(href="./flashcard.html" class="text-white no-hover-underline") Học ngay
+    //-  Notify icon and avatar icon -----------------
+    div
+      a(class="mr-2 px-1 py-2" href="#" role="button" aria-label="notification")
+        svg(class="icon__notify")
+          use(xlink:href="#bell")
+      a(href="#" role="button" aria-label="profile")
+        svg(class='icon__profile')
+          use(xlink:href="#profile")
